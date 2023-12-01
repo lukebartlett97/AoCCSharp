@@ -1,0 +1,13 @@
+C:\Users\Luke\source\repos\AoCCSharpSkeleton\AoCCSharpSkeleton\obj\Debug\netcoreapp3.1\AoCCSharpSkeleton.csprojAssemblyReference.cache
+C:\Users\Luke\source\repos\AoCCSharpSkeleton\AoCCSharpSkeleton\obj\Debug\netcoreapp3.1\AoCCSharpSkeleton.AssemblyInfoInputs.cache
+C:\Users\Luke\source\repos\AoCCSharpSkeleton\AoCCSharpSkeleton\obj\Debug\netcoreapp3.1\AoCCSharpSkeleton.AssemblyInfo.cs
+C:\Users\Luke\source\repos\AoCCSharpSkeleton\AoCCSharpSkeleton\obj\Debug\netcoreapp3.1\AoCCSharpSkeleton.csproj.CoreCompileInputs.cache
+C:\Users\Luke\source\repos\AoCCSharpSkeleton\AoCCSharpSkeleton\bin\Debug\netcoreapp3.1\AoCCSharpSkeleton.exe
+C:\Users\Luke\source\repos\AoCCSharpSkeleton\AoCCSharpSkeleton\bin\Debug\netcoreapp3.1\AoCCSharpSkeleton.deps.json
+C:\Users\Luke\source\repos\AoCCSharpSkeleton\AoCCSharpSkeleton\bin\Debug\netcoreapp3.1\AoCCSharpSkeleton.runtimeconfig.json
+C:\Users\Luke\source\repos\AoCCSharpSkeleton\AoCCSharpSkeleton\bin\Debug\netcoreapp3.1\AoCCSharpSkeleton.runtimeconfig.dev.json
+C:\Users\Luke\source\repos\AoCCSharpSkeleton\AoCCSharpSkeleton\bin\Debug\netcoreapp3.1\AoCCSharpSkeleton.dll
+C:\Users\Luke\source\repos\AoCCSharpSkeleton\AoCCSharpSkeleton\bin\Debug\netcoreapp3.1\AoCCSharpSkeleton.pdb
+C:\Users\Luke\source\repos\AoCCSharpSkeleton\AoCCSharpSkeleton\obj\Debug\netcoreapp3.1\AoCCSharpSkeleton.dll
+C:\Users\Luke\source\repos\AoCCSharpSkeleton\AoCCSharpSkeleton\obj\Debug\netcoreapp3.1\AoCCSharpSkeleton.pdb
+C:\Users\Luke\source\repos\AoCCSharpSkeleton\AoCCSharpSkeleton\obj\Debug\netcoreapp3.1\AoCCSharpSkeleton.genruntimeconfig.cache
