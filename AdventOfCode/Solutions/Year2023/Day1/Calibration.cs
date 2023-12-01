@@ -27,12 +27,9 @@ namespace AdventOfCode.Solutions
 
         protected override String Solve(List<String> data)
         {
-            return data.Select(item =>
-            {
-                var value = FindFirst(item) * 10 + FindLast(item);
-                Console.WriteLine($"{item} => {value}");
-                return value;
-            }).Sum().ToString();
+            return data.Select(item => FindFirst(item) * 10 + FindLast(item))
+                .Sum()
+                .ToString();
         }
 
         private int FindFirst(string item)
