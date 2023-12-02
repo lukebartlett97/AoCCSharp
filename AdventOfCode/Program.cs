@@ -6,7 +6,7 @@ namespace AdventOfCode
     {
         static void Main(string[] args)
         {
-            Calibration solution = new Calibration();
+            Marbles solution = new Marbles();
             solution.Verbose = true;
             solution.PrintSolution();
         }
