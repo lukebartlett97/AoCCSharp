@@ -6,9 +6,8 @@ namespace AdventOfCode
     {
         static void Main(string[] args)
         {
-            Marbles solution = new Marbles();
-            solution.Verbose = true;
-            solution.PrintSolution();
+            Scratchcards solution = new Scratchcards();
+            solution.PrintSolution(true);
         }
     }
 }
