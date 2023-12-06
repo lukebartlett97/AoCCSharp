@@ -6,7 +6,7 @@ namespace AdventOfCode
     {
         static void Main(string[] args)
         {
-            Scratchcards solution = new Scratchcards();
+            BoatRace solution = new BoatRace();
             solution.PrintSolution(true);
         }
     }

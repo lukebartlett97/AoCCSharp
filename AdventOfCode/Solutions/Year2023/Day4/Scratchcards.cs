@@ -17,7 +17,6 @@ namespace AdventOfCode.Solutions
             for(int i = 0; i < data.Count(); i++)
             {
                 var line = data[i].Split(":")[1];
-                var currentCopies = copies[i];
 
                 var split = line.Split('|');
                 var winners = split[0].Split(" ").Where(val => val != "").Select(val => int.Parse(val)).ToArray();
@@ -27,7 +26,7 @@ namespace AdventOfCode.Solutions
 
                 for(int j = i + 1; j < i + gotchas.Count() + 1; j++)
                 {
-                    copies[j] += currentCopies;
+                    copies[j] += copies[i];
                 }
             }
 
