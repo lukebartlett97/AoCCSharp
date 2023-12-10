@@ -1,4 +1,5 @@
 ﻿using AdventOfCode.Solutions;
+using System;
 
 namespace AdventOfCode
 {
@@ -6,7 +7,7 @@ namespace AdventOfCode
     {
         static void Main(string[] args)
         {
-            BoatRace solution = new BoatRace();
+            PipeMaze solution = new PipeMaze();
             solution.PrintSolution(true);
         }
     }
