@@ -7,7 +7,7 @@ namespace AdventOfCode
     {
         static void Main(string[] args)
         {
-            PipeMaze solution = new PipeMaze();
+            GalaxyDistance solution = new GalaxyDistance();
             solution.PrintSolution(true);
         }
     }
