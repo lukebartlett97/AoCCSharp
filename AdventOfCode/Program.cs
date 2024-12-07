@@ -7,7 +7,7 @@ namespace AdventOfCode
     {
         static void Main(string[] args)
         {
-            GalaxyDistance solution = new GalaxyDistance();
+            SolutionMain solution = new FlipFlops();
             solution.PrintSolution(true);
         }
     }
