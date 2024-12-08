@@ -20,7 +20,7 @@ namespace AdventOfCode.Solutions
         private Map CreateMap(List<String> data)
         {
             var map = new Map();
-            data.ConvertAll(line => ConvertToIntegerList(Regex.Split(line, @" -> |,").ToList())).ForEach(line => map.AddLine(line[0], line[1], line[2], line[3], Verbose));
+            data.ConvertAll(line => Regex.Split(line, @" -> |,").ToList().ConvertToIntegerList()).ForEach(line => map.AddLine(line[0], line[1], line[2], line[3], Verbose));
             return map;
         }
 

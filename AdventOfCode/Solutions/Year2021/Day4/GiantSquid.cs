@@ -12,7 +12,7 @@ namespace AdventOfCode.Solutions
 
         protected override String Solve(List<String> data)
         {
-            var orderedNums = ConvertToIntegerList(data[0].Split(',').ToList());
+            var orderedNums = data[0].Split(',').ToList().ConvertToIntegerList();
             var boards = GetBoards(data, orderedNums);
             boards.Sort((a, b) => a.WinningTurn - b.WinningTurn);
             return boards[^1].GetScore(orderedNums).ToString();
@@ -26,7 +26,7 @@ namespace AdventOfCode.Solutions
                 List<List<int>> boardData = new List<List<int>>();
                 for(var j = 0; j<5; j++)
                 {
-                    boardData.Add(ConvertToIntegerList(data[i + j].Split(' ').Where(val => val != "").ToList()));
+                    boardData.Add(data[i + j].Split(' ').Where(val => val != "").ToList().ConvertToIntegerList());
                 }
                 boards.Add(new BingoBoard(boardData, orderedNums, Verbose));
             }

@@ -20,17 +20,17 @@ namespace AdventOfCode.Solutions
 
         protected abstract String Solve(List<String> data);
 
-        public void PrintSolution(bool verbose = false) {
-            Verbose = verbose;
+        public void PrintSolution(bool exampleVerbose = false, bool solutionVerbose = false) {
+            Verbose = exampleVerbose;
             GetProblem().ForEach(s => Console.WriteLine(s));
+            Console.WriteLine();
             List<String> exampleData = GetExample();
             if (exampleData != null)
             {
-                Console.WriteLine("Example Data:");
-                PrintSolution(exampleData);
+                PrintSolution(exampleData, "Example");
             }
-            Console.WriteLine("Real Data:");
-            PrintSolution(GetData());
+            Verbose = solutionVerbose;
+            PrintSolution(GetData(), "Real");
         }
 
             public void PrintExample(bool verbose = true)
@@ -38,14 +38,18 @@ namespace AdventOfCode.Solutions
             Verbose = verbose;
             GetProblem().ForEach(s => Console.WriteLine(s));
             List<String> exampleData = GetExample();
-            Console.WriteLine("Example Data:");
-            PrintSolution(exampleData);
+            PrintSolution(exampleData, "Example");
         }
 
-        private void PrintSolution(List<String> data) {
-            Console.WriteLine(String.Join(", ", data));
-            Console.WriteLine("Solution:");
-            Console.WriteLine(Solve(data));
+        private void PrintSolution(List<String> data, string label)
+        {
+            PrintInfo(label + " Data:");
+            PrintInfo(String.Join(", ", data));
+            PrintInfo("---");
+            var solution = Solve(data);
+            Console.WriteLine("---");
+            Console.WriteLine(label + " Solution:");
+            Console.WriteLine(solution);
         }
 
         public void TimeSolution(int runs) {
@@ -96,20 +100,6 @@ namespace AdventOfCode.Solutions
         private List<String> ReadFile(string file)
         {
             return File.ReadAllLines(file).ToList();
-        }
-
-        protected List<int> ConvertToIntegerList(List<String> strings)
-        {
-            return strings
-                .Select(x => int.Parse(x))
-                .ToList();
-        }
-
-        protected List<long> ConvertToLongList(List<String> strings)
-        {
-            return strings
-                .Select(x => long.Parse(x))
-                .ToList();
         }
 
         protected void PrintInfo(String line)

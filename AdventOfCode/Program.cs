@@ -1,4 +1,5 @@
-﻿using AdventOfCode.Solutions;
+﻿global using AdventOfCode.Common;
+using AdventOfCode.Solutions;
 using System;
 
 namespace AdventOfCode
@@ -7,8 +8,8 @@ namespace AdventOfCode
     {
         static void Main(string[] args)
         {
-            SolutionMain solution = new FlipFlops();
-            solution.PrintSolution(true);
+            SolutionMain solution = new AntennaFrequency();
+            solution.PrintSolution(true, true);
         }
     }
 }

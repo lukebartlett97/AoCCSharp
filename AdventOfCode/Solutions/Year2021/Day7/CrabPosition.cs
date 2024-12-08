@@ -10,7 +10,7 @@ namespace AdventOfCode.Solutions
 
         protected override String Solve(List<String> data)
         {
-            var nums = ConvertToIntegerList(data[0].Split(',').ToList());
+            var nums = data[0].Split(',').ToList().ConvertToIntegerList();
             return FindMostEfficientFuel(nums).ToString();
         }
 

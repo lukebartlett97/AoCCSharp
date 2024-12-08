@@ -14,7 +14,7 @@ namespace AdventOfCode.Solutions
 
         protected override String Solve(List<String> data)
         {
-            return GetNumberIncreased(ConvertToIntegerList(data), PART_2_WINDOW_SIZE).ToString();
+            return GetNumberIncreased(data.ConvertToIntegerList(), PART_2_WINDOW_SIZE).ToString();
         }
 
         private int GetNumberIncreased(List<int> data, int windowSize)
