@@ -8,7 +8,7 @@ namespace AdventOfCode
     {
         static void Main(string[] args)
         {
-            SolutionMain solution = new AntennaFrequency();
+            SolutionMain solution = new HikingTrails();
             solution.PrintSolution(true, true);
         }
     }

@@ -36,7 +36,7 @@ namespace AdventOfCode.Solutions
             public void PrintExample(bool verbose = true)
         {
             Verbose = verbose;
-            GetProblem().ForEach(s => Console.WriteLine(s));
+            GetProblem().ForEach(Console.WriteLine);
             List<String> exampleData = GetExample();
             PrintSolution(exampleData, "Example");
         }
@@ -44,7 +44,7 @@ namespace AdventOfCode.Solutions
         private void PrintSolution(List<String> data, string label)
         {
             PrintInfo(label + " Data:");
-            PrintInfo(String.Join(", ", data));
+            data.ForEach(PrintInfo);
             PrintInfo("---");
             var solution = Solve(data);
             Console.WriteLine("---");
